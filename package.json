@@ -1,0 +1,20 @@
+{
+  "name": "randomite-backend-service",
+  "version": "1.0.0",
+  "description": "random phone number generator ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": ""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/matthewacha/randomite-backend-service.git"
+  },
+  "author": "Matthew O Wacha",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/matthewacha/randomite-backend-service/issues"
+  },
+  "homepage": "https://github.com/matthewacha/randomite-backend-service#readme"
+}
