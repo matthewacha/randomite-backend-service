@@ -11,7 +11,7 @@ package-lock.json
 yarn-lock.json
 
 # production
-/build
+/dist
 
 # misc
 .DS_Store
@@ -19,7 +19,3 @@ yarn-lock.json
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
-
-.nyc_output
-.env
-*.env.json
