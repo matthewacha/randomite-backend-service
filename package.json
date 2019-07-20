@@ -1,0 +1,40 @@
+{
+  "name": "randomite-backend-service",
+  "version": "1.0.0",
+  "description": "random phone number generator ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start:dev": "NODE_ENV=development  DEBUG=log  nodemon -r esm src/index.js",
+    "build": "yarn run clean && yarn run build-server",
+    "build-server": "babel src --out-dir dist -s",
+    "serve": "node -r esm dist/index.js",
+    "clean": "rm -rf dist && mkdir dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/matthewacha/randomite-backend-service.git"
+  },
+  "author": "Matthew O Wacha",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/matthewacha/randomite-backend-service/issues"
+  },
+  "homepage": "https://github.com/matthewacha/randomite-backend-service#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "debug": "^4.1.1",
+    "dotenv": "^8.0.0",
+    "esm": "^3.2.25",
+    "express": "^4.17.1",
+    "express-validator": "^6.1.1",
+    "morgan": "^1.9.1",
+    "passport": "^0.4.0"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "nodemon": "^1.19.1"
+  }
+}
